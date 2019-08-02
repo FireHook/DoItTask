@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DoItTask</string>
+    <string name="action_name">Name</string>
+    <string name="action_priority">Priority</string>
+    <string name="action_data">Data</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="log_in">log in</string>
+    <string name="sign_in">Sign In</string>
+    <string name="go_to_registration">Go to registration</string>
+    <string name="go_to_login">Go to login</string>
+    <string name="register">register</string>
+    <string name="registration">Registration</string>
+    <string name="due_to">Due to</string>
+    <string name="description">Description</string>
+    <string name="notification">Notification</string>
+    <string name="delete">Delete event</string>
+    <string name="title">Title</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="network_error">Network ERROR</string>
+    <string name="fill_the_info">Fill the information, please</string>
+    <string name="action_name_asc">Name asc</string>
+    <string name="action_name_desc">Name desc</string>
+    <string name="action_priority_asc">Priority asc</string>
+    <string name="action_priority_desc">Priority desc</string>
+    <string name="action_data_asc">Date asc</string>
+    <string name="action_data_desc">Date desc</string>
+    <string name="edit_hint">Edit task</string>
+</resources>

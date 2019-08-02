@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="login_register_text_size">24sp</dimen>
+    <dimen name="task_item_text_size">18sp</dimen>
+    <dimen name="view_margin">16dp</dimen>
+    <dimen name="view_doubled_margin">32dp</dimen>
+    <dimen name="view_half_margin">8dp</dimen>
+    <dimen name="task_detail_name_size">20sp</dimen>
+    <dimen name="task_detail_text_size">16sp</dimen>
+    <dimen name="toolbar_icon_padding">12dp</dimen>
+</resources>

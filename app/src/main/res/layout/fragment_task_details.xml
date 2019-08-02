@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/view_margin">
+
+    <TextView
+            android:id="@+id/task_detail_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meeting with clients for discussing a new project"
+            android:textStyle="bold"
+            android:textSize="@dimen/task_detail_name_size"
+            android:padding="@dimen/view_half_margin"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/task_detail_expiration_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuesday 19 Feb, 2019"
+            android:textSize="@dimen/task_detail_text_size"
+            android:padding="@dimen/view_half_margin"
+            app:layout_constraintTop_toBottomOf="@+id/task_detail_name_textview"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_priority"
+            android:textSize="@dimen/task_detail_text_size"
+            android:padding="@dimen/view_half_margin"
+            app:layout_constraintTop_toBottomOf="@+id/task_detail_expiration_textview"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+            android:id="@+id/task_detail_priority_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_go_arrow"
+            android:drawableLeft="@drawable/ic_go_arrow"
+            android:text="High"
+            android:textSize="@dimen/task_detail_text_size"
+            android:padding="@dimen/view_half_margin"
+            app:layout_constraintTop_toBottomOf="@+id/task_detail_expiration_textview"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/task_detail_priority_textview" android:id="@+id/view"/>
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textSize="@dimen/task_detail_text_size"
+            android:padding="@dimen/view_half_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/task_detail_priority_textview"/>
+
+    <TextView
+            android:id="@+id/task_detail_description_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need to meet with clients to discuss project before 19 Feb"
+            android:textSize="@dimen/task_detail_text_size"
+            android:padding="@dimen/view_half_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/task_detail_description_textview"
+            android:id="@+id/view2"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification"
+            android:textSize="@dimen/task_detail_text_size"
+            android:padding="@dimen/view_half_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/task_detail_description_textview"
+            android:id="@+id/textView4"/>
+
+    <TextView
+            android:id="@+id/task_detail_notification_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 min before"
+            android:textSize="@dimen/task_detail_text_size"
+            android:padding="@dimen/view_half_margin"
+            app:layout_constraintTop_toBottomOf="@+id/task_detail_description_textview"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/task_detail_notification_textview"
+            android:id="@+id/view3"/>
+
+    <Button
+            android:id="@+id/task_detail_delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/task_item_text_size"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/view_half_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

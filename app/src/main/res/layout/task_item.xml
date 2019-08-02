@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/view_half_margin">
+
+    <TextView
+            android:id="@+id/task_item_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meeting with clients for discussing..."
+            android:textSize="@dimen/task_item_text_size"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/due_to"
+            android:textSize="@dimen/task_item_text_size"
+            android:layout_marginTop="@dimen/view_half_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/task_item_name_textview"/>
+
+    <TextView
+            android:id="@+id/task_item_expiration_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02/19/19"
+            android:textSize="@dimen/task_item_text_size"
+            android:layout_marginStart="@dimen/view_half_margin"
+            android:layout_marginLeft="@dimen/view_half_margin"
+            android:layout_marginTop="@dimen/view_half_margin"
+            app:layout_constraintTop_toBottomOf="@+id/task_item_name_textview"
+            app:layout_constraintStart_toEndOf="@+id/textView"/>
+
+    <TextView
+            android:id="@+id/task_item_priority_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_go_arrow"
+            android:drawableLeft="@drawable/ic_go_arrow"
+            android:text="High"
+            android:textSize="@dimen/task_item_text_size"
+            android:layout_marginStart="@dimen/view_doubled_margin"
+            android:layout_marginLeft="@dimen/view_doubled_margin"
+            android:layout_marginTop="@dimen/view_half_margin"
+            app:layout_constraintTop_toBottomOf="@+id/task_item_name_textview"
+            app:layout_constraintStart_toEndOf="@+id/task_item_expiration_textview"/>
+
+    <ImageButton
+            android:id="@+id/go_arrow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_go_arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_marginTop="@dimen/view_half_margin"
+            app:layout_constraintTop_toBottomOf="@+id/task_item_priority_textview"/>
+
+</android.support.constraint.ConstraintLayout>

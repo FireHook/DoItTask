@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        android:id="@+id/toolbar_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <ImageView
+            android:id="@+id/notification_imageview"
+            android:src="@android:drawable/ic_popup_reminder"
+            android:padding="@dimen/toolbar_icon_padding"
+            android:visibility="gone"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize" />
+
+    <TextView
+            android:id="@+id/toolbar_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:lines="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:ignore="MissingPrefix"/>
+
+    <ImageView
+            android:id="@+id/notification_center_imageview"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:layout_gravity="center"
+            android:padding="@dimen/toolbar_icon_padding"
+            android:visibility="gone"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize" />
+
+</FrameLayout>

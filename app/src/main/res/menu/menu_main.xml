@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.firehook.doittask.mvp.view.MainActivity">
+
+    <item android:id="@+id/action_name_asc"
+          android:title="@string/action_name_asc"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_name_desc"
+          android:title="@string/action_name_desc"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_priority_asc"
+          android:title="@string/action_priority_asc"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_priority_desc"
+          android:title="@string/action_priority_desc"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_date_asc"
+          android:title="@string/action_data_asc"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_date_desc"
+          android:title="@string/action_data_desc"
+          app:showAsAction="never"/>
+</menu>

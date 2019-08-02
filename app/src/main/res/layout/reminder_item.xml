@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/view_margin"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/view_half_margin"
+        android:layout_marginStart="@dimen/view_half_margin"
+        android:layout_marginEnd="@dimen/view_half_margin">
+
+    <CheckBox
+            android:id="@+id/switch_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="On/Off reminder"
+            android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginLeft="@dimen/view_margin">
+        <TextView
+                android:id="@+id/reminder_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some meeting title"
+                android:textSize="@dimen/task_detail_text_size"/>
+
+
+        <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+        />
+
+        <TextView
+                android:id="@+id/reminder_expiration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22/03/19"
+                android:textSize="@dimen/task_detail_text_size"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
